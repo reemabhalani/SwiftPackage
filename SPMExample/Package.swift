@@ -8,21 +8,21 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "SPMExample",
-            targets: ["SPMExample"]),
+            name: "SPMDemoFramework",
+            targets: ["SPMDemoFramework"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "SPMExample",
-            dependencies: []),
-        .testTarget(
-            name: "SPMExampleTests",
-            dependencies: ["SPMExample"]),
+        .binaryTarget(name: "SPMDemoFramework",
+                      path: "SPMDemoFramework.xcframework"
+                     )
+//        .binaryTarget(
+//            name: "SPMDemoFramework",
+//            url: "https://github.com/reemabhalani/SPMDemoFramework/blob/main/SPMDemoFramework/SPMDemoFramework.xcframework.zip",
+//            checksum: "15739ac0978a4bef87a38963ee2f4614298e78f2adfae7949220c421581ec05b"
+//        )
     ]
 )
