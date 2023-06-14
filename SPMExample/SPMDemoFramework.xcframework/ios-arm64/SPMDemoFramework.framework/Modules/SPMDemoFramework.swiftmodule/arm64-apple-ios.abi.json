@@ -1,0 +1,34 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SPMDemoFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LaunchSPMDemo",
+        "printedName": "LaunchSPMDemo",
+        "declKind": "Class",
+        "usr": "s:16SPMDemoFramework06LaunchA0C",
+        "mangledName": "$s16SPMDemoFramework06LaunchA0C",
+        "moduleName": "SPMDemoFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
